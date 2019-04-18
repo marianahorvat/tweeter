@@ -13,7 +13,7 @@ $(document).ready(function() {
 //----------------------------------------------------------------------------
 
   function renderTweets(tweets) {
-    var tweetContainer = $('.tweets-container')
+    var tweetContainer = $('.tweets-container');
     tweetContainer.empty();
 
     for (tweet of tweets) {
@@ -102,10 +102,11 @@ $(function() {
           url: '/tweets',
           data: $( this ).serialize(),
           success: function() {
-              loadTweets()
+              loadTweets();
+              $('#send-tweets').trigger("reset");
               //renderTweets(data);
           }
-      })
+      });
     }
    });
   });
@@ -118,7 +119,7 @@ $(function() {
             method: 'GET',
             url: '/tweets',
             success: function(tweets){
-              (renderTweets(tweets))
+              (renderTweets(tweets));
             }
         });
       }
