@@ -30,6 +30,7 @@ header p {
     box-shadow: 5px 5px #d4d3d3;
     margin-top: 5px;
     margin-bottom: 5px;
+    
 }
 
 .tweet:hover {
@@ -46,13 +47,18 @@ header p {
     line-height: 5;
 }
 
-.tweet footer div{
+.tweet footer div {
     float: right;
     display: none;
   }
  
   .tweet:hover footer div{
     display: block;
+  }
+
+  .tweet-image {
+    border-radius: 25px;
+    margin: 10px;
   }
 
 
