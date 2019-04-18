@@ -82,12 +82,21 @@ $(function() {
   //.seralize() to turn form data into query string
   //send to server
   let $newTweetForm = $(".new-tweet form");
+  
   console.log('First run')
 
   $newTweetForm.on('submit', function (event) {
       event.preventDefault();
       console.log( $( this ).serialize() );
       //get the value of text-area and seralize form data into query string before sending to server
+      let $newTweetText = $(".tweet-input").val();
+      
+      if ($newTweetText.length === 0) {
+        alert("Error: Your tweet content is not present");
+      } else if ($newTweetText.length > 140) {
+        alert("Error: Your tweet content is too long");
+      } else {
+
       $.ajax({
           type: 'POST',
           url: '/tweets',
@@ -97,6 +106,7 @@ $(function() {
               //renderTweets(data);
           }
       })
+    }
    });
   });
 
