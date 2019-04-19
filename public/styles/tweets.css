@@ -50,16 +50,19 @@ header p {
 .tweet footer div {
     float: right;
     display: none;
-  }
- 
-  .tweet:hover footer div{
-    display: block;
-  }
+}
 
-  .tweet-image {
-    border-radius: 25px;
-    margin: 10px;
-  }
+.tweet:hover footer div{
+display: block;
+}
 
+.tweet-image {
+border-radius: 25px;
+margin: 10px;
+}
+
+.months {
+font-size: small;
+}
 
 

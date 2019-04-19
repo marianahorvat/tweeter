@@ -98,9 +98,9 @@ $(function() {
       let $newTweetText = $(".tweet-input").val();
       
       if ($newTweetText.length === 0) {
-        alert("Error: Your tweet content is not present");
+        return $(".error").text("Error: Your tweet content is not present").slideToggle(true);
       } else if ($newTweetText.length > 140) {
-        alert("Error: Your tweet content is too long");
+        return $(".error").text("Error: Your tweet content is too long").slideToggle(true);
       } else {
 
       $.ajax({
