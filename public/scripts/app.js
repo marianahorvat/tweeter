@@ -29,6 +29,12 @@ $(document).ready(function() {
 // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
+
+    $( ".compose-button" ).click(function() {
+      $( ".new-tweet" ).slideToggle( "slow" );
+      $("textarea").focus();
+    });
+
     function createTweetElement(tweet) {
       let {user, content, created_at} = tweet;
       let {name, avatars, handle} = user;
