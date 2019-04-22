@@ -28,6 +28,10 @@
   top: 20%;
   right: 5%;
   height: 50px;
+  background-color: #b1ece4;
+  color: rgb(50, 153, 102);
+  border: 1px solid black;
+  border-radius: 8%;
 }
 
 #nav-bar .compose-button:hover {

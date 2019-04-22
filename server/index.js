@@ -1,5 +1,7 @@
 "use strict";
 
+//server/index.js configures and starts an express app: acquires a db, uses it to build some data helpers, and uses those to define routes
+
 // Basic express setup:
 
 const PORT          = 8080;

@@ -30,7 +30,6 @@ header p {
     box-shadow: 5px 5px #d4d3d3;
     margin-top: 5px;
     margin-bottom: 5px;
-    
 }
 
 .tweet:hover {
@@ -38,8 +37,16 @@ header p {
 }
 
 .tweet-body {
-    margin-left: 10px;
+    margin-left: 0px;
     height: 100px;
+}
+
+span.tweet-body {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    height: 30%;
+    flex-wrap: wrap;
 }
 
 .tweet-body h5 {
@@ -66,6 +73,10 @@ font-size: small;
 }
 
 .icons{
-    font-size: small
+font-size: small;
+flex-wrap: wrap;
+margin-right: 0.5em;
+margin-top: 0.2em;
+margin-bottom: 0px;
 }
 
